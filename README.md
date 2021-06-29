@@ -1,2 +1,1 @@
-# awatto
-# dellorick
+# 🔥 For react and css practices only
