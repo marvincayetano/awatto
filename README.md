@@ -1,1 +1,1 @@
-# 🔥 For react and css practices only
+# 🔥 For react, typescript and css practices only
