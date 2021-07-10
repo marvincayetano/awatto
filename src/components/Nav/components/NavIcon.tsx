@@ -15,7 +15,7 @@ const NavIcon: React.FC<NavIconProps> = ({ icon }) => {
       className="mr-6 hover:to-blue-500"
       color="white"
       icon={icon}
-      size="2x"
+      size="lg"
     />
   );
 };

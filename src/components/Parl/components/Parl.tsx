@@ -1,5 +1,5 @@
 import React from "react";
-import parliament from "../images/parliament.svg";
+import parliament from "../images/parliament-bw.svg";
 
 interface ParlProps {}
 
