@@ -1,29 +1,14 @@
 import React from "react";
-import { MenuInterface, NavDropdown } from "./NavDropdown";
-
-enum NavType {
-  history = "history",
-  summer = "summer",
-  fall = "fall",
-  winter = "winter",
-  spring = "spring",
-}
-
-// Different season different set of menus
-const NAV_MENU = {
-  [NavType.history]: [{ label: "History Resources" }],
-  [NavType.summer]: [{}],
-  [NavType.fall]: [{}],
-  [NavType.winter]: [{}],
-  [NavType.spring]: [{}],
-};
+import { NavDropdown } from "./NavDropdown";
+import { MenuInterface, NavType, NAV_MENU } from "./utils";
 
 interface NavMenuProps {
   type: string;
 }
 
+// History is default
+// but it can be changed by clicking the other buttons
 export const NavMenu: React.FC<NavMenuProps> = ({ type = "history" }) => {
-  console.log(NAV_MENU[type as NavType]);
   return (
     <div className="flex">
       {(NAV_MENU[type as NavType] as MenuInterface[]).map((menu) => (

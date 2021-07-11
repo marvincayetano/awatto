@@ -5,10 +5,10 @@ import Overlay from "./components/Overlay";
 
 function App() {
   return (
-    <div className="relative h-screen h-width bg-gradient-to-b from-black to-gray-500">
+    <div className="relative h-screen h-width bg-gradient-to-b from-black to-gray-700">
       <Nav />
       {/* <Overlay /> */}
-      <Parl />
+      {/* <Parl /> */}
     </div>
   );
 }
