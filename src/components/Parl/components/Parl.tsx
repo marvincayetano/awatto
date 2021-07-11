@@ -1,4 +1,5 @@
 import React from "react";
+import Overlay from "../../Overlay";
 import parliament from "../images/parliament-bw.svg";
 
 interface ParlProps {}
