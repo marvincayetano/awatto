@@ -3,12 +3,12 @@ import { MenuInterface } from "./utils";
 
 interface NavDropdownProps {
   category: MenuInterface;
-  menuArr?: [MenuInterface];
+  menuArr?: MenuInterface[];
 }
 
 export const NavDropdown: React.FC<NavDropdownProps> = ({
   category,
-  menuArr = [{ label: "bubumu", url: "bubumodotcom" }],
+  menuArr,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -44,6 +44,7 @@ export const NavDropdown: React.FC<NavDropdownProps> = ({
                 role="menuitem"
                 tabIndex={-1}
                 id="menu-item-2"
+                key={menu.label}
               >
                 {menu.label}
               </a>

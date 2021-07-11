@@ -8,12 +8,30 @@ interface NavMenuProps {
 
 // History is default
 // but it can be changed by clicking the other buttons
-export const NavMenu: React.FC<NavMenuProps> = ({ type = "history" }) => {
+export const NavMenu: React.FC<NavMenuProps> = ({ type }) => {
   return (
     <div className="flex">
       {(NAV_MENU[type as NavType] as MenuInterface[]).map((menu) => (
-        <NavDropdown category={{ label: menu.label }} />
+        <NavDropdown
+          key={menu.label}
+          category={{ label: menu.label }}
+          menuArr={menu.menuArr}
+        />
       ))}
+
+      <NavDropdown
+        category={{ label: "Best of Ottawa" }}
+        menuArr={[{ label: "Best Shawarma" }]}
+      />
+      <NavDropdown
+        category={{ label: "Where to" }}
+        menuArr={[
+          { label: "Rideau Canal" },
+          { label: "ByWard Market" },
+          { label: "Parliament Hill" },
+          { label: "Gatineau Park" },
+        ]}
+      />
     </div>
   );
 };
