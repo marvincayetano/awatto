@@ -17,7 +17,7 @@ export const NavDropdown: React.FC<NavDropdownProps> = ({
       <div>
         <button
           type="button"
-          className="inline-flex justify-center w-full rounded-md px-4 py-2 text-sm font-medium text-gray-300 hover:text-transparent bg-clip-text bg-gradient-to-br from-white to-red-600"
+          className="inline-flex justify-center w-full rounded-md px-4 py-2 text-sm font-medium text-gray-300 transition duration-200 ease-linear hover:text-transparent bg-clip-text bg-gradient-to-br from-white to-red-600"
           id="menu-button"
           aria-expanded="true"
           aria-haspopup="true"

@@ -2,6 +2,7 @@ import React from "react";
 import Parl from "./components/Parl";
 import Nav from "./components/Nav";
 import Overlay from "./components/Overlay";
+import History from "./components/History";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Nav />
       {/* <Overlay /> */}
       {/* <Parl /> */}
+      <History />
     </div>
   );
 }

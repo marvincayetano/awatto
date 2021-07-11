@@ -10,6 +10,7 @@ export enum NavType {
 export const NAV_MENU = {
   [NavType.history]: [
     { label: "History Resources", menuArr: [{ label: "Lorem Ipsum" }] },
+    { label: "Museums" },
   ],
   [NavType.summer]: [
     { label: "Summer Activities", menuArr: [{ label: "Lorem Ipsum" }] },
