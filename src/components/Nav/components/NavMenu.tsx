@@ -19,10 +19,13 @@ export const NavMenu: React.FC<NavMenuProps> = ({ type }) => {
         />
       ))}
 
+      <NavDropdown category={{ label: "Food" }} />
+
       <NavDropdown
         category={{ label: "Best of Ottawa" }}
         menuArr={[{ label: "Best Shawarma" }]}
       />
+
       <NavDropdown
         category={{ label: "Where to" }}
         menuArr={[

@@ -18,9 +18,11 @@ export const Nav: React.FC<NavProps> = ({}) => {
 
   return (
     <div className="h-16 inline-flex w-full justify-between items-center pr-6 pl-6 fixed">
-      <h1 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-white to-red-600">
-        Ottawa
-      </h1>
+      <a href="">
+        <h1 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-white to-red-600">
+          Ottawa
+        </h1>
+      </a>
       <NavMenu type={currentType} />
       <div className="flex h-auto">
         <FontAwesomeIcon
