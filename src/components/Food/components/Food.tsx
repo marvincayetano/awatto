@@ -1,9 +1,11 @@
 import React from "react";
+import { FoodNav } from "./FoodNav";
 
 interface FoodProps {}
 
 export function Food({}: FoodProps) {
   return (
+<<<<<<< HEAD
     <div className="min-h-screen flex items-center justify-start">
       <div className="flex w-full max-w-xs p-4 bg-white">
         <ul className="flex flex-col w-full">
@@ -61,6 +63,12 @@ export function Food({}: FoodProps) {
             </a>
           </li>
         </ul>
+=======
+    <div className="flex w-full">
+      <div className="flex w-1/2 justify-start">
+        <FoodNav />
+        <FoodNav />
+>>>>>>> 07ea1f1ef31876e9ee363e15d548ea7d6da4f126
       </div>
     </div>
   );
