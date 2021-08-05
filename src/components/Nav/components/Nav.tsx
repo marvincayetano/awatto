@@ -19,12 +19,12 @@ export const Nav: React.FC<NavProps> = ({}) => {
   return (
     <div className="h-16 inline-flex w-full justify-between items-center pr-6 pl-6 fixed">
       <a href="">
-        <h1 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-white to-red-600">
-          Ottawa
+        <h1 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-br from-gray-50 to-red-600">
+          <span className="text-4xl font-medium text-black">Food</span> Ottawa
         </h1>
       </a>
-      <NavMenu type={currentType} />
-      <div className="flex h-auto">
+      {/* <NavMenu type={currentType} /> */}
+      {/* <div className="flex h-auto">
         <FontAwesomeIcon
           className="mr-10 hover: cursor-pointer"
           color="gray"
@@ -46,7 +46,7 @@ export const Nav: React.FC<NavProps> = ({}) => {
           setType={setCurrentType}
         />
         <NavIcon icon={faLeaf} type={NavType.spring} setType={setCurrentType} />
-      </div>
+      </div> */}
     </div>
   );
 };
