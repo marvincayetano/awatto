@@ -17,7 +17,7 @@ export function Food({}: FoodProps) {
               href="#"
               className="flex flex-row items-center h-12 px-4 rounded-lg text-gray-600 hover:bg-gray-100"
             >
-              <span className="ml-3">Manager</span>
+              <span className="ml-3">Asian</span>
             </a>
           </li>
           <li className="my-px">
@@ -25,7 +25,7 @@ export function Food({}: FoodProps) {
               href="#"
               className="flex flex-row items-center h-12 px-4 rounded-lg text-gray-600 hover:bg-gray-100"
             >
-              <span className="ml-3">Tasks</span>
+              <span className="ml-3">South American</span>
             </a>
           </li>
           <li className="my-px">
